@@ -1,0 +1,61 @@
+{
+  "name": "banquanjia",
+  "version": "1.0.0",
+  "versionW2": "1.0.2",
+  "main": "main.js",
+  "author": {
+    "email": "banquanjia@anne.com",
+    "name": "banquanjia",
+    "url": "https://www.bqj.cn"
+  },
+  "description": "banquanjia application",
+  "productName": "banquanjia",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "build": {
+    "appId": "banquanjia(Z3J7ZZDAL6.www.banquanjia.clientside)",
+    "productName": "测试软件-222",
+    "copyright": "Copyright © 2018 banquanjia",
+    "artifactName": "${productName}-${version}-${versionW2}.${ext}",
+    "compression": "maximum",
+    "electronVersion": "6.0.10",
+    "mac": {
+      "identity": "Beijing Version of The Whole Family Technology Development Co., Ltd. (Z3J7ZZDAL6)",
+      "target": [
+        {
+          "target": "mas",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "type": "distribution",
+      "icon": "ico"
+    },
+    "mas": {
+      "binaries": []
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "title": "BanQuanJia_Setup_Mac_1.0.0.1"
+    },
+    "directories": {
+      "output": "."
+    }
+  },
+  "dependencies": {
+    "electron": "^6.0.10"
+  }
+}
